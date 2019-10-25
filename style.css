@@ -43,9 +43,17 @@ body {
   padding: 9rem 4rem 7.8rem 4rem;
 }
 
+.heading-flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
 h1.header2 {
   font-size: 2.4rem;
   margin-bottom: 2.5rem;
+  font-weight: 600;
 }
 
 h2.header1 {
@@ -60,11 +68,13 @@ p {
 
 p.desc {
   margin-bottom: 7.8rem;
+  max-width: 54rem;
+  text-align: center;
 }
 
 .box-grid {
   display: grid;
-  grid-template-columns: minmax(307px, 1fr);
+  grid-template-columns: minmax(350px, 1fr);
   grid-template-rows: repeat(8, 100px);
   grid-row-gap: 24px;
 }
@@ -79,7 +89,8 @@ p.desc {
 }
 
 .box-item__header {
-  font-size: 2.2rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .box-item__desc {
@@ -112,4 +123,3 @@ p.desc {
   grid-row: 7/9;
   border-top: 4px solid var(--Blue);
 }
-
